@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="side_image" style="background-image: url(https://images.unsplash.com/photo-1506656680297-07a6e8be48eb?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">
+        <div> 
+            <h1>Belbut</h1>
+            <img src="./assets/logo-removebg.png" alt="logo">
+        </div>
+        <figcaption>Photo by <a href="https://instagram.com/connorcreates/">Connor Carruthers</a> on <a
+                href="https://unsplash.com/@connorcreates_">Unsplash</a></figcaption>
+    </div>
+
+    <div id="content">
+        <div id="description" class="container">
+            <p> This is not a real online service! You know you need something link this in your life to help you
+                realize your deepest dreams.
+                Sign up <i>now</i> to get started.
+            </p>
+            <p>You <i>know</i> you want to.</p>
+        </div>
+
+            <form action="" method="post">
+                <div id="form_fields">
+                    <div id="inputsection" class="container">
+                        <h2>Let's do this!</h2>
+                        <div id="names" class="section">
+                            <div>
+                                <label for="user_first_name">First Name</label>
+                                <input type="text" name="user_first_name" id="first_name" required placeholder="Thor">
+                            </div>
+                            <div>
+                                <label for="last_name">Last Name</label>
+                                <input type="text" name="user_last_name" id="last_name" required placeholder="Odinson">
+                            </div>
+                        </div>
+                        <div id="contacts" class="section">
+                            <div id="email_section">
+                                <label for="user_email">EMAIL</label>
+                                <input type="email" name="user_email" id="email" placeholder="odin@valhala.feast">
+                            </div>
+                            <div id="phone_section">
+                                <label for="user_phone">PHONE NUMBER</label>
+                                <input type="tel" name="user_phone" id="phone" pattern=^\d{9}$ placeholder="#########">
+                            </div>
+                        </div>
+                        <div id="password" class="section">
+                            <div id="password_section">
+                                <label for="user_password"> Password</label>
+                                <input type="password" name="user_password" id="password" placeholder=" " pattern="^(?=.*[A-Za-z])(?=.*\d).{9,}$" required>
+                            </div>
+                            <div id="password_section">
+                                <label for="user_password"> Password</label>
+                                <input type="password" name="user_password" id="password" placeholder=" " pattern="^(?=.*[A-Za-z])(?=.*\d).{9,}$" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="action_section" class="container">
+                    <button type="submit">Create Account</button>
+                    <p>Already have an account? <a href="http://127.0.0.1:5500/signup/index.html">Log in</a></p>
+                </div>
+            </form>
+
+    </div>
+
+
+</body>
+
+</html>

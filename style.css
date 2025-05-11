@@ -1,0 +1,154 @@
+@font-face {
+    font-family: imported-font;
+    src: url(./assets/webfontkit-20250511-064259/montserrat-medium-webfont.woff2);
+    font-weight:600;
+}
+
+:root {
+    --invalid-border-color: red;
+    --selected-border-color: blue;
+    --light-text-color: #DEDEDE;
+    --dark_background: black;
+    --form-background: white;
+    --light-background: #F9FAFB;
+    --light-blue-color: #61829E;
+    --label-color: #244268;
+    --label-border-color:#E5E7EB;
+    }
+    
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    background-color: var(--dark_background);
+
+    font-family: sans-serif;
+}
+
+.side_image {
+    background-size: cover;
+    width: 30lh;
+
+    display: flex;
+    flex-direction: column;
+
+    color: var(--light-text-color);
+}
+
+.side_image div {
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    margin-top: 25vh;
+}
+
+.side_image img ,.side_image h1 {
+    width: 150px;
+    vertical-align: middle;
+    display: inline-block;
+
+    font-family: imported-font;
+    font-size: 40px;
+}
+
+h1 {
+    margin-left: 70px;
+}
+
+figcaption {
+    margin-bottom: 0.5rem;
+    margin-top: auto;
+    text-align: center;
+}
+
+.side_image a {
+    color: var(--light-text-color);
+}
+
+#content {
+    background-color: var(--light-background);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50lh;
+}
+
+#description p{
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: left;
+
+    margin-bottom: 3rem;
+}
+
+.container  {
+    padding-left: clamp(1px, 5vw, 50px);
+    padding-right: clamp(1px, 15vw, 130px);
+}
+  
+
+#form_fields {
+    background-color: var(--form-background);
+    padding: 0.5rem 0 2.5rem 0;
+}
+
+button{ 
+    color: var(--light-text-color);
+    background-color: var(--light-blue-color);
+
+    border: none;
+    border-radius: 8px;
+    padding: 10px 40px;
+
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+#action_section {
+    font-size: 1.3rem;
+    font-weight: 400;
+
+    padding-top: 30px;
+}
+
+
+#action_section a {
+    color: var(--light-blue-color);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.section{
+    display: flex;
+}
+
+.section div{
+    display: flex;
+    flex-direction: column;
+    padding: 5% 150px 0 0
+}
+
+label{
+    color:var(--label-color);
+}
+
+input{
+    height: 1.5rem;
+    border: 3px solid var(--label-border-color);
+    border-radius: 4px;
+}
+
+input:invalid:not(:placeholder-shown) {
+    transition: all 0.8s linear;
+    outline: 0;
+    border-color: var(--invalid-border-color);
+}
+
+input:focus {
+    transition: all 0.8s linear;
+    outline: 0;
+    border-color: var(--selected-border-color);
+}
+
